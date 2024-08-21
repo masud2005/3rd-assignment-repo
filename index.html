@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Assignment 3</title>
     <script>
         tailwind.config = {
@@ -19,8 +21,70 @@
           }
         }
     </script>
+    <style>
+        .manrope{
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
 </head>
-<body>
-    <h1 class="bg-red-500">Test</h1>
+<body class="manrope">
+    <header class="bg-gradient-to-b from-gray-50 to-white pt-10">
+        <!-- Navbar Section -->
+        <div class="container mx-auto ">
+            <div class="navbar flex justify-between">
+                <div class="navbar-start">
+                    <i class="fa-solid fa-arrow-right-long -rotate-45 bg-lime-400 rounded-full px-2 py-[5px] text-sm"></i>
+                  <a class="btn btn-ghost text-3xl text-[#212121] font-extrabold">Rinterio</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 text-[#737373]">
+                    <li><a class="text-[#494949] font-extrabold">Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end hidden md:block flex text-end">
+                    <i class="fa-solid fa-magnifying-glass bg-gray-100 rounded-full text-gray-500 p-2  mr-5"></i>
+                    <i class="fa-solid fa-cart-shopping bg-gray-100 rounded-full text-gray-500 p-2  mr-5"></i>
+                    <a class="btn bg-lime-400 text-[#1C1C1C] text-xl font-extrabold rounded-3xl">Book Consult <i class="fa-solid fa-arrow-right-long -rotate-45 bg-black rounded-full text-white px-2 py-[5px] text-sm"></i></a>
+                </div>
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-5 w-5"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor">
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                      </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content right-0 bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-[#737373]">
+                      <li><a>Home</a></li>
+                      <li><a>Services</a></li>
+                      <li><a>Portfolio</a></li>
+                      <li><a>Blogs</a></li>
+                      <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Banner Section -->
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
